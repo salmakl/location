@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+        name="description"           
+        content="index page">
+        <meta name="keywords" content="cars,location">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+</head>
+<body>
+    <script>
+        function nav(){
+            var nav = document.getElementById("navcontenu");
+            if(nav.getAttribute("vue")=="active")
+            {
+                document.getElementById("navcontenu").classList.remove("menu");
+                nav.setAttribute("vue","");
+            }else
+            {
+                nav.setAttribute("vue","active");
+                document.getElementById("navcontenu").classList.add("menu");
+
+            }
+        }
+    </script>
+    <svg class="menu" viewBox="0 0 100 80" width="40" height="40" fill="#C2A859" onclick="nav()">
+        <rect width="100" height="20"></rect>
+        <rect y="30" width="100" height="20"></rect>
+        <rect y="60" width="100" height="20"></rect>
+    </svg>
+    <!-- <img src="1.png" alt=""> -->
+<header>
+		<a href="index.html"><img src="LOGO.png" alt="#" width="200px"></a>
+
+	<ul id="navcontenu" class=" " vue="">
+		  <li class="active"><a href="#home">Home</a></li>
+		  <li><a href="gallery.html">Gallery</a></li>
+		  <li><a href="reservation.html">Reservation</a></li>
+		  <li><a href="contact.html">Contact</a></li>
+	</ul>
+</header>
+<!--main-->
+<section class="main">
+    <h1>Welcome to our website</h1>
+    <button class="button"> 
+Reserve now
+    </button>
+</section>
+ 
+<section id="customers" class="customers" style="text-align: center;">
+    <h2 class="title">What our Customers says</h2>
+    <p>Making a reservation , is easy and takes just a couple of minutes.</p>
+
+
+    <div class="grp-msgs">
+        <div class="box">
+            <img class="box-img" src="images/customer.jpg" alt="img user" />
+            <p>
+                Making a reservation , is easy and takes just a couple of minutes.
+            </p>
+            <div class="line-under-title">
+                <div class="line-center"></div>
+            </div>
+            <div class="grp-icons" style="margin-top: 10px;">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star" ></i>
+                <i class="fas fa-star" ></i>
+                <i class="fas fa-star" ></i>
+            </div>
+        </div>
+        <div class="box">
+            <img class="box-img" src="images/customer.jpg" alt="img user" />
+            <p>
+                Making a reservation , is easy and takes just a couple of minutes.
+            </p>
+            <div class="line-under-title">
+                <div class="line-center"></div>
+            </div>
+            <div class="grp-icons" style="margin-top: 10px;">
+                <i class="fas fa-star" style="margin-right: 5px;color: yellow;"></i>
+                <i class="fas fa-star" style="margin-right: 5px;color: yellow;"></i>
+                <i class="fas fa-star" style="margin-right: 5px;color: yellow;"></i>
+                <i class="fas fa-star" style="margin-right: 5px;color: black;"></i>
+                <i class="fas fa-star" style="margin-right: 5px;color: black;"></i>
+            </div>
+        </div>
+        <div class="box">
+            <img class="box-img" src="images/customer.jpg" alt="img user" />
+            <p>
+                Making a reservation , is easy and takes just a couple of minutes.
+            </p>
+            <div class="line-under-title">
+                <div class="line-center"></div>
+            </div>
+            <div class="grp-icons" style="margin-top: 10px;">
+                <i class="fas fa-star" style="margin-right: 5px;color: yellow;"></i>
+                <i class="fas fa-star" style="margin-right: 5px;color: yellow;"></i>
+                <i class="fas fa-star" style="margin-right: 5px;color: yellow;"></i>
+                <i class="fas fa-star" style="margin-right: 5px;color: black;"></i>
+                <i class="fas fa-star" style="margin-right: 5px;color: black;"></i>
+            </div>
+        </div>
+    </div>
+
+
+
+</section>
+<footer>
+    <div class="company">
+        <h3 class="titles">RentCar <span>.</span></h3>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, saepe possimus dolores cupiditate neque ad.
+
+        </p>
+    </div>
+    <div class="contact">
+        <h3 class="titles">Contact</h3>
+        <ul>
+            <li><i class="fab fa-facebook"></i> KALKHI Salma</li>
+            <li><i class="fab fa-whatsapp"></i> +212616466731</li>
+            <li><i class="fab fa-google-plus"></i> salma.kalkhi@gmail.com</li>
+        </ul>
+    </div>
+</footer>
+
+</body>
+</html>

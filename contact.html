@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact</title>
+	<link rel="stylesheet" href="style.css">
+	<!DOCTYPE html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta
+        name="description"           
+        content="page de contact">
+        <meta name="keywords" content="cars,location">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+</head>
+<body>
+	<script>
+        function nav(){
+            var nav = document.getElementById("navcontenu");
+            if(nav.getAttribute("vue")=="active")
+            {
+                document.getElementById("navcontenu").classList.remove("menu");
+                nav.setAttribute("vue","");
+            }else
+            {
+                nav.setAttribute("vue","active");
+                document.getElementById("navcontenu").classList.add("menu");
+
+            }
+        }
+    </script>
+    <svg class="menu" viewBox="0 0 100 80" width="40" height="40" fill="#C2A859" onclick="nav()">
+        <rect width="100" height="20"></rect>
+        <rect y="30" width="100" height="20"></rect>
+        <rect y="60" width="100" height="20"></rect>
+    </svg>
+    <!--nav-->
+    <header>
+        <a href="index.html"><img src="LOGO.png" alt="#" width="200px"></a>
+    <ul id="navcontenu">
+          <li><a href="index.html">Home</a></li>
+          <li class="active"><a href="gallery.html">Gallery</a></li>
+          <li><a href="reservation.html">Reservation</a></li>
+          <li><a href="contact.html">Contact</a></li>
+    </ul>
+</header>
+<h1>Contact</h1>
+<br>
+<div class="fromulaire">
+<form class="fromulaire">
+	<div>
+		<label>First Name</label><br>
+		<input type="text" name="name" placeholder="">
+	</div>
+
+	<div>
+		<label>Last Name</label><br>
+		<input type="text" name="last">
+	</div>
+
+	<div>
+		<label>Email</label><br>
+		<input type="email" name="email">
+	</div>
+	<div>
+		<label>Message</label><br>	
+		<textarea></textarea>
+	</div>
+	<div>
+		<input type="submit" name="Send" value="Send">
+	</div>
+
+</form>
+</div>
+     <!--footer-->
+	 <footer>
+		<div class="company">
+			<h3 class="titles">RentCar <span>.</span></h3>
+			<p>
+				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, saepe possimus dolores cupiditate neque ad.
+	
+			</p>
+		</div>
+		<div class="contact">
+			<h3 class="titles">Contact</h3>
+			<ul>
+				<li><i class="fab fa-facebook"></i> KALKHI Salma</li>
+				<li><i class="fab fa-whatsapp"></i> +212616466731</li>
+				<li><i class="fab fa-google-plus"></i> salma.kalkhi@gmail.com</li>
+			</ul>
+		</div>
+		
+	</footer>
+</body>
+</html>

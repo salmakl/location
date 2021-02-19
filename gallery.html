@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gallery</title>
+	<link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+        name="description"           
+        content="page de gallery">
+        <meta name="keywords" content="cars,location">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+</head>
+<body>
+
+    <script>
+        function nav(){
+            var nav = document.getElementById("navcontenu");
+            if(nav.getAttribute("vue")=="active")
+            {
+                document.getElementById("navcontenu").classList.remove("menu");
+                nav.setAttribute("vue","");
+            }else
+            {
+                nav.setAttribute("vue","active");
+                document.getElementById("navcontenu").classList.add("menu");
+
+            }
+        }
+    </script>
+    <svg class="menu" viewBox="0 0 100 80" width="40" height="40" fill="#C2A859" onclick="nav()">
+        <rect width="100" height="20"></rect>
+        <rect y="30" width="100" height="20"></rect>
+        <rect y="60" width="100" height="20"></rect>
+    </svg>
+    <!--nav-->
+    <header>
+        <a href="index.html"><img src="LOGO.png" alt="#" width="200px"></a>
+    <ul id="navcontenu">
+          <li><a href="index.html">Home</a></li>
+          <li class="active"><a href="gallery.html">Gallery</a></li>
+          <li><a href="reservation.html">Reservation</a></li>
+          <li><a href="contact.html">Contact</a></li>
+    </ul>
+</header>
+
+
+     <section> 
+          <div class="title">
+          <h1> Our Cars </h1>
+    </div>
+    <h2>Citadine</h2>
+      <div class ="vehicules">
+      <div  class="slide"> <img src="images/citadine.png"  alt="this is a car "> </div>
+      <div  class="slide"> <img src="images/citadine1.png"  alt="this is a  2 car "> </div>
+      <div  class="slide"> <img src="images/citadine2.png"  alt="this is a 3  car "> </div>
+      <div  class="slide"> <img src="images/citadine3.png"  alt="this is a 4 car "> </div>
+    </div>
+
+        <h2>Compacte</h2>
+      <div class ="vehicules">
+      <div  class="slide"> <img src="images/compacte.png"  alt="this is a car "> </div>
+      <div  class="slide"> <img src="images/2.png"  alt="this is a  2 car "> </div>
+      <div  class="slide"> <img src="images/compacte2.png"  alt="this is a 3  car "> </div>
+      <div  class="slide"> <img src="images/compacte3.png"  alt="this is a 4 car "> </div>
+    </div>
+
+    <h2>Berlin</h2>
+    <div class ="vehicules">
+    <div  class="slide"> <img src="images/berlin.png"  alt="this is a car "> </div>
+    <div  class="slide"> <img src="images/berlin1.png"  alt="this is a  2 car "> </div>
+    <div  class="slide"> <img src="images/berliné.jpg"  alt="this is a 3  car "> </div>
+    <div  class="slide"> <img src="images/berlin3.jpg"  alt="this is a 4 car "> </div>
+  </div>
+  
+      </section>
+
+      <section> 
+          <div class="title">
+              <h1> Our Bikes </h1><br><br>
+          </div>
+      <div class ="vehicules">
+          <div  class="slide"> <img src="images/moto1.jpeg"  > </div>
+          <div  class="slide"> <img src="images/moto2.jpeg"  > </div>
+          <div  class="slide"> <img src="images/moto3.jpeg"  > </div>
+          <div  class="slide"> <img src="images/moto4.jpeg"  > </div>
+          
+      </div>
+    
+      </section>
+
+      <section> 
+        <div class="title">
+            <h1> Our Bikes </h1><br><br>
+        </div>
+    <div class ="vehicules">
+        <div  class="slide"> <img src="images/utilitaire.png"  > </div>
+        <div  class="slide"> <img src="images/utilitaire1.png"  > </div>
+        <div  class="slide"> <img src="images/utilitaire2.jpg"  > </div>
+        <div  class="slide"> <img src="images/utilitaire3.jpg"  > </div>
+        
+    </div>
+  
+    </section>
+
+    <section> 
+        <div class="title">
+            <h1> Our Bikes </h1><br><br>
+        </div>
+    <div class ="vehicules">
+        <div  class="slide"> <img src="images/truck.png"  > </div>
+        <div  class="slide"> <img src="images/truck1.jpg"  > </div>
+        <div  class="slide"> <img src="images/truck2.jpg"  > </div>
+        <div  class="slide"> <img src="images/truck3.png"  > </div>
+        
+    </div>
+  
+    </section>
+
+    <footer>
+        <div class="company">
+            <h3 class="titles">RentCar <span>.</span></h3>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, saepe possimus dolores cupiditate neque ad.
+    
+            </p>
+        </div>
+        <div class="contact">
+            <h3 class="titles">Contact</h3>
+            <ul>
+                <li><i class="fab fa-facebook"></i> KALKHI Salma</li>
+                <li><i class="fab fa-whatsapp"></i> +212616466731</li>
+                <li><i class="fab fa-google-plus"></i> salma.kalkhi@gmail.com</li>
+            </ul>
+        </div>
+
+    </footer>
+</body>
+</html>
