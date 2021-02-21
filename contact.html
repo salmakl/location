@@ -27,7 +27,7 @@
             }
         }
     </script>
-    <svg class="menu" viewBox="0 0 100 80" width="40" height="40" fill="#C2A859" onclick="nav()">
+    <svg class="menu" viewBox="0 0 100 80" width="40" height="40" fill="#8C4055" onclick="nav()">
         <rect width="100" height="20"></rect>
         <rect y="30" width="100" height="20"></rect>
         <rect y="60" width="100" height="20"></rect>
@@ -37,9 +37,9 @@
         <a href="index.html"><img src="LOGO.png" alt="#" width="200px"></a>
     <ul id="navcontenu">
           <li><a href="index.html">Home</a></li>
-          <li class="active"><a href="gallery.html">Gallery</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
           <li><a href="reservation.html">Reservation</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li class="active"><a href="contact.html">Contact</a></li>
     </ul>
 </header>
 <h1>Contact</h1>
@@ -48,24 +48,32 @@
 <form class="fromulaire">
 	<div>
 		<label>First Name</label><br>
-		<input type="text" name="name" placeholder="">
+		<input type="text" name="name" placeholder="" id="Prenom">
+		
 	</div>
+	<div><span id="ErreurPrenom" ></span> </div>
 
 	<div>
 		<label>Last Name</label><br>
-		<input type="text" name="last">
+		<input type="text" name="last" id="Nom">
+		
 	</div>
+	<div> <span id ="ErreurNom"> </span> </div>
 
 	<div>
 		<label>Email</label><br>
-		<input type="email" name="email">
+		<input type="email" name="email" id="Email">
+		
 	</div>
+	<div><span id="ErreurEmail"></span></div>
 	<div>
 		<label>Message</label><br>	
-		<textarea></textarea>
+		<textarea id="Message"></textarea>
+		
 	</div>
-	<div>
-		<input type="submit" name="Send" value="Send">
+	<div><span id="ErreurMessage"></span> </div>
+	<div class="btn">
+		<input type="button" onclick="validation()" name="Send" value="Send">
 	</div>
 
 </form>
@@ -89,5 +97,7 @@
 		</div>
 		
 	</footer>
+
+	<script src="validation.js"></script>
 </body>
 </html>

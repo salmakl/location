@@ -26,7 +26,7 @@
             }
         }
     </script>
-    <svg class="menu" viewBox="0 0 100 80" width="40" height="40" fill="#C2A859" onclick="nav()">
+    <svg class="menu" viewBox="0 0 100 80" width="40" height="40" fill="#8C4055" onclick="nav()">
         <rect width="100" height="20"></rect>
         <rect y="30" width="100" height="20"></rect>
         <rect y="60" width="100" height="20"></rect>
@@ -36,8 +36,8 @@
         <a href="index.html"><img src="LOGO.png" alt="#" width="200px"></a>
     <ul id="navcontenu">
           <li><a href="index.html">Home</a></li>
-          <li class="active"><a href="gallery.html">Gallery</a></li>
-          <li><a href="reservation.html">Reservation</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li  class="active"><a href="reservation.html">Reservation</a></li>
           <li><a href="contact.html">Contact</a></li>
     </ul>
 </header>
@@ -58,25 +58,24 @@
     <h1>Select your fuel type</h1>
     <form class="feul">
         <div class="carburant">
-            <input type="radio" id="essence" name="radio" value="essence">
+            <input type="radio" id="essence" name="radio" value="0.14" onclick="fuelP(this.value)">
             <label for="essence">Essence</label>
         </div>
         <div class="carburant">
-            <input type="radio" id="diesel" name="radio" value="diesel">
+            <input type="radio" id="diesel" name="radio" value="0.21" onclick="fuelP(this.value)">
             <label for="diesel">Diesel</label>
         </div>
         <div class="carburant">
-            <input type="radio" id="electrique" name="radio" value="electrique">
+            <input type="radio" id="electrique" name="radio" value="0.05" onclick="fuelP(this.value)">
             <label for="electrique">Electrique</label>
         </div>
         <div class="carburant">
-            <input type="radio" id="hybride" name="radio" value="hybride">
+            <input type="radio" id="hybride" name="radio" value="0.09" onclick="fuelP(this.value)">
             <label for="hybride">Hybride</label>
         </div>
     </form>
 
     <!-----------------------gear box----------------------->
-
     <h1>Select your gear box type</h1>
     <form class="gear-box">
         <div class="gear">
@@ -92,18 +91,15 @@
     <!-----------------------Reservation duration----------------------->
 
     <h1>Reservation duration</h1>
-    <form class="duration">
+    <div class="duration">
         <div class="du">
         <label for="date">Number of days</label>
-            <input type="number" >
- 
-
+            <input type="number" id="days" min="1">
         </div>
-        <div>
-            <input type="submit" name="" value="Submit">
-            <button>Submit</button>
+        <div class="btn1">
+            <input type="submit" name="submit" value="Submit" onclick="calc()">
         </div>
-      </form>
+    </div>
       <footer>
         <div class="company">
             <h3 class="titles">RentCar <span>.</span></h3>

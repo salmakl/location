@@ -23,6 +23,7 @@ header{
 }
 header img{
 	width: 130px;
+    margin-top: 10px;
 
 }
 
@@ -71,16 +72,14 @@ h1{
 .best-vehicules {
     display: flex;
     flex-wrap: nowrap;
-    overflow-x: scroll;
-
-
   }
 
 .vehicules {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
-    padding-left: 30px
+    padding-left: 30px;
+    overflow-x: scroll;
 
 
   }
@@ -94,11 +93,6 @@ h1{
       height: 200px;
       border-radius: 2%;
   }
-
-
-
-
-
 
 
 .customers {
@@ -129,6 +123,7 @@ h1{
     width: 40%;
     margin: 0 20px;
 }
+
 
 .box .box-img {
     margin: 20px 0;
@@ -242,7 +237,7 @@ input[type=submit]:hover {
   background-color: #8C4055;
 }
 input[type=submit] {
-  width: 50%;
+ 
   background-color: #BB7184;
   color: white;
   padding: 14px 20px;
@@ -250,10 +245,26 @@ input[type=submit] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  width: 20%;
-  margin-left: 40%;
+}
+input[type=button] {
+ 
+    background-color: #BB7184;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+div .btn{
+    margin-left: 50%;
 }
 
+div .btn1{
+    margin-top: 10%;
+    
+   
+}
 div .fromulaire{
   border-radius: 5px;
   background-color: #f2f2f2;
@@ -507,13 +518,7 @@ p{
           height: 200px;
           border-radius: 2%;
       }
-    
-    
-    
-    
-    
-    
-    
+ 
     .customers {
         position: relative;
         padding: 70px 50px;
@@ -528,6 +533,7 @@ p{
         justify-content: space-between;
         align-items: center;
         margin: top 25px;
+        overflow-x: scroll;
     }
     
     .box {
@@ -541,6 +547,7 @@ p{
         box-shadow: 0px 0px 10px gray;
         width: 40%;
         margin: 0 20px;
+       
     }
     
     .box .box-img {
